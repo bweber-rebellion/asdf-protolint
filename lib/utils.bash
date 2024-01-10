@@ -46,7 +46,7 @@ get_platform() {
 
 get_arch() {
 	if [[ $(uname -m) == "x86_64" ]]; then
-		_arch="$(uname -m)"
+		_arch="amd64"
 		echo "$_arch"
 	elif [[ $(uname -m) == "arm64" ]]; then
 		_arch="$(uname -m)"
